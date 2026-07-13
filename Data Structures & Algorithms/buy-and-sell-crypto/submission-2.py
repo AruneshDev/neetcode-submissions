@@ -1,0 +1,83 @@
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        l,r=0,1
+        # l is buy r is sell
+        maxProfit=0
+
+        while r<len(prices):
+            if prices[l]<prices[r]:
+                profit=prices[r]-prices[l]
+                maxProfit=max(maxProfit,profit)
+            else:
+                l=r
+            r+=1
+        return maxProfit
+        
+
+        
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        # l,r=0,1
+        # # l is buy r is sell
+        # maxProf=0
+        # while r<len(prices):
+        #     if prices[l]<prices[r]:
+        #         profit=prices[r]-prices[l]
+        #         maxProf=max(maxProf,profit)
+        #     else:
+        #         l=r
+        #     r+=1
+        # return maxProf
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        # l,r=0,1
+        # #left is buying
+        # #right is selling
+        # maxProf=0
+        # while r<len(prices):
+        #     if prices[l]<prices[r]:
+        #         profit = prices[r]-prices[l]
+        #         maxProf=max(maxProf,profit)
+        #     else:
+        #         l=r
+        #     r+=1
+        # return maxProf
